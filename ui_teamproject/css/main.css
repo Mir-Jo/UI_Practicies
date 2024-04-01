@@ -1,0 +1,135 @@
+@charset "utf-8";
+body{
+    font-family: "Gothic A1", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  color: #ffffff;
+  background-color: black;
+  margin:0;
+}
+div{
+  width: 100%;
+  height: 100%;
+}
+main{
+  width: 100%;
+  height: 3000px;
+}
+
+main #main_back{
+  position: relative;
+  top: 50%;
+  width:100%;
+  height: 1500px;
+  background-color: black;
+  z-index: 10;
+}
+main .background{
+  background: url(../bg/bg_big.gif) no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  opacity: 0.7;
+  z-index: -3;
+}
+main #recList{
+  width: 20%;
+  height: 8%;
+  position: relative;
+  top:28%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0 10px 0;
+  font-size: 4em;
+  font-weight: bold;
+  color:white;
+  background-color: lightblue;
+  border: 1px solid gray;
+  border-radius: 100% ;
+}
+main .imgslide{
+  padding:0;
+  margin: 0 auto;
+  position: relative;
+  width: 30%;
+  height: 45%;
+  top:30%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: beige;
+  border: 2px groove gray;
+  border-radius: 5%;
+  box-shadow: 0 0 5px gray;
+  z-index: -1;
+  overflow: hidden;
+}
+main .imgslide .sliding_img{
+  padding:0;
+  margin: auto 10% auto 10%;
+  width: 430px;
+  height: 602px;
+}
+main .imgslide .sliding_img a>img{
+  margin: auto 0;
+  border: 1px solid black;
+  box-shadow: 0 0 10px lightblue;
+}
+
+/* main .imgslide .sliding_img{
+  animation: left4;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+} */
+main .imgslide .sliding_img{
+  animation: right;
+  animation-duration: 100s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease;
+}
+
+/* 오른쪽으로 이동*/
+@keyframes right{
+  0%{
+    transform: translateX(0%);
+  }
+  4%{
+    transform: translateX(0%);
+  }
+  20%{
+    transform: translateX(127%);
+  }
+  24%{
+    transform: translateX(127%);
+  }
+  40%{
+    transform: translateX(254%);
+  }
+  44%{
+    transform: translateX(254%);
+  }
+  52%{
+    transform: translateX(370%);
+  }
+  52.00001%{
+    transform: translateX(-370%);
+  }
+  60%{
+    transform: translateX(-254%);
+  }
+  64%{
+    transform: translateX(-254%);
+  }
+  80%{
+    transform: translateX(-127%);
+  }
+  84%{
+    transform: translateX(-127%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

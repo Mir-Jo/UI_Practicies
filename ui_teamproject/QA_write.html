@@ -49,8 +49,8 @@
     <hr>
     <h5>문의 제목</h5><br><input type="text" name="QA_title" id="QA_title">
     <br>
-    <h5>문의 내용</h5><br><textarea name="QA_comment" id="QA_comment">여기에 내용을 입력해주세요.(최대1000자)</textarea>
-    <span id="counter">(0 / 1000)</span>
+    <h5>문의 내용</h5><br><textarea name="QA_comment" id="QA_comment" style="width:100%" maxlength="1000" placeholder="여기에 내용을 입력해주세요(최대 1000자)"></textarea>
+    <span class="counter_others">(&nbsp;</span><span id="comment_length">0</span> <span class="counter_others"> / 1000 )</span>
     <hr>
     <h5>첨부 파일</h5><input type="file" name="file" id="file">
     <div id="QA_caution">
@@ -61,10 +61,11 @@
     </div>
     <div id="buttons">
       <a href="#"><span id="QA_submit">문의 등록</span></a>
-      <a href="#"><span id="QA_cancel">취소</span></a>
+      <a href="support.html"><span id="QA_cancel">취소</span></a>
     </div>
   </main>
   <footer>
   </footer>
+  <script src="js/QA_write.js"></script>
 </body>
 </html>

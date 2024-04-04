@@ -50,10 +50,8 @@ h5{
   margin-bottom: 2%;
 }
 #QA_comment{
-  width:100%;
   height: 170px;
   resize: none;
-  overflow-y:scroll;
 }
 #file{
   margin:2% 0 2% 1%;
@@ -92,11 +90,19 @@ span{
   margin-right: 18%;
   margin-bottom:5%;
 }
-#counter{
+#comment_length{
   width:auto;
   border: none;
   font-size: 14px;
   font-weight: 400;
   position: relative;
   margin-bottom: 1%;
+}
+.counter_others{
+  width:auto;
+  border: none;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 1%;  
 }
